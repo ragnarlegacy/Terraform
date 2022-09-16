@@ -20,5 +20,39 @@ This tutorial is based on configuring Azure Kubernetes Cluster On Azure Cloud us
  
 <h1>How to Setup?</h1>
  
- <ul>1. Clone the repository on your local machine using Visual Studio Code. /n vdjhbvs</ul>
+ <ul>1. Clone the repository on your local machine using Visual Studio Code.</ul>
+ <ul>   <h6>$ git clone https://github.com/ragnarlegacy/Terraform.git</h6></ul>
+ 
+ <ul>2. Change the directory.</ul>
+ <ul>   <h6>$ cd Terraform/Kubernetes/Azure</h6></ul>
+ 
+ <ul>3. Edit the terraform.tfvars</ul>
+ <ul>   <h6>$ nano terraform.tfvars</h6></ul>
+ <ul>   Configure client ID, client secret, tenant ID, subscription ID</ul>
+ 
+ <ul>4. Edit variables.tf file and customize accordingly.</ul>
+ <ul>   <h6>$ nano variables.tf</h6></ul>
+ <ul>   Resource Group Name, Resource Group Location, Cluster Name, DNS_Prefix name, Agent Node pool number, ssh_public_key</ul>
+ 
+ <ul>5. Run the command: <h6>$terraform plan</h6></ul>
+ 
+ <ul>6. Run the command: <h6>$terraform apply</h6></ul>
+ 
+ After few minutes, AKS will be ready. You can verify the availability of the cluster.
+ First, Get the credentials of the cluster using the following commands using Azure Cli:
+ <ul><b>$az login</b></ul> 
+ A web page will open and put the azure cloud account details for authentication.
+ If having multiple subscription. Use it:
+ <ul><b>$az account show</b></ul>
+ <ul><b>$az account set --subscription "xxxx"</b></ul>
+ Command below will fetch the AKS config file and store it at some location depending on the OS:
+ <ul><b>$az aks get-credentials --resource-group myResourceGroup --name myAKSCluster</b></ul>
+ Now, you can check the cluster info.
+ <ul><b>$kubectl cluster-info</b></ul>
+ <ul><b>$kubectl get nodes</b></ul>
+ 
+ <h1>Run your application</h1>
+ 
+ 
+ 
   

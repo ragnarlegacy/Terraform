@@ -51,8 +51,14 @@ This tutorial is based on configuring Azure Kubernetes Cluster On Azure Cloud us
  <ul><b>$kubectl cluster-info</b></ul>
  <ul><b>$kubectl get nodes</b></ul>
  
- <h1>Run your application</h1>
+ <h3>That's all folks for the cluster.</h3>
  
- 
+ <h1>Run your first application</h1>
+ <ul><b>$kubectl apply -f wefox-hello-challenge.yaml -n namespace</b></ul>
+ <ul><b>$kubectl get pods -n namespace</b></ul>
+ <ul><b>$kubectl get svc -n namespace</b></ul>
+
+<h3> There you go ! You can browse the url with ip address assigned to you application.</h3>
+<b>http://ip_address</b>
  
   

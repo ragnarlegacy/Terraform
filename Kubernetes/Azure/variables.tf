@@ -1,15 +1,15 @@
 variable "resource_group_name" {
-  default = "wefox"
+  default = "resource_group_name"
   description = "Name of the reource group"
 }
 
 variable "resource_group_location" {
-  default       = "eastus"
+  default       = "resource_location"
   description   = "Location of the resource group."
 }
 
 variable "agent_count" {
-    default = 1
+    default = Number
     description = "Number of nodes in a pool"
 }
 
@@ -19,12 +19,12 @@ variable "ssh_public_key" {
 }
 
 variable "dns_prefix" {
-    default = "wefox-cluster"
+    default = "dns_prefix_name"
     description = "DNS Prefix"
 }
 
 variable cluster_name {
-    default = "wefox-challenge-cluster"
+    default = "cluster_name"
     description = "cluster name"
 }
 

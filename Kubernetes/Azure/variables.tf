@@ -9,7 +9,7 @@ variable "resource_group_location" {
 }
 
 variable "agent_count" {
-    default = Number
+    default = 1
     description = "Number of nodes in a pool"
 }
 

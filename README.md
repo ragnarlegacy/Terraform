@@ -14,9 +14,11 @@ This tutorial is based on configuring Azure Kubernetes Cluster On Azure Cloud us
 <ul>2. Yaml</ul>
 
 <h2>Prerequisites:</h2>
-<ul>1. Install terraform</ul>
-<ul>2. Install Azure CLI</ul>
-<ul>3. Install Helm3</ul>
+<ul>1. Install terraform  --> You can install terraform based on your operating system nfrom here: https://learn.hashicorp.com/tutorials/terraform/install-cli</ul>
+
+<ul>2. Install Azure CLI  --> You can install azure cli based on your operating system from here: https://docs.microsoft.com/en-us/cli/azure/install-azure-cli</ul>
+
+<ul>3. Install Helm3  --> You can install helm based on your operating system from here: https://helm.sh/docs/intro/install/</ul>
  
 <h1>How to Setup?</h1>
  

@@ -1,10 +1,10 @@
 variable "resource_group_name" {
-  default = "resource_group_name"
+  default = "wefox"
   description = "Name of the reource group"
 }
 
 variable "resource_group_location" {
-  default       = "resource_location"
+  default       = "East US"
   description   = "Location of the resource group."
 }
 
@@ -14,17 +14,17 @@ variable "agent_count" {
 }
 
 variable "ssh_public_key" {
-    default =   "absolute_path_to_the_key/.ssh/id_rsa.pub"
+    default =   "C:/Documents/surance_key_pair.pem"
     description = "SSH Key PAIR"
 }
 
 variable "dns_prefix" {
-    default = "dns_prefix_name"
+    default = "wefox-cluster"
     description = "DNS Prefix"
 }
 
 variable cluster_name {
-    default = "cluster_name"
+    default = "wefox-challenge-cluster"
     description = "cluster name"
 }
 

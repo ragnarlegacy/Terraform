@@ -10,7 +10,7 @@ resource "azurerm_kubernetes_cluster" "k8s" {
   dns_prefix          = var.dns_prefix
 
   default_node_pool {
-    name       = "node_pool_name"
+    name       = "wefoxnodepol"
     node_count = var.agent_count
     vm_size    = "standard_d2_v2"
   }
